@@ -1,0 +1,490 @@
+body{
+    font-family: Arial, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #344051;
+}
+.logo{
+    float: left;
+    color: white;
+    font-size: 28px;
+    line-height: 60px;
+    padding-left: 388px;
+}
+.menu{
+    float: left;
+    padding-left: 430px;
+}
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: white;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background:url(../img/guy.png) 90% 100%/auto 85% no-repeat, url(../img/bg1.jpg) center/cover no-repeat;
+}
+.title_container{
+    float: left;
+    margin: 432px 0px 0px 404px;
+    color: #2c384a;
+    text-align: center;
+}
+.title_container h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.title_container h4{
+    margin-top: 30px;
+    font-size: 25px;
+    color: #79818d;
+}
+.title_container input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 14px;
+    padding: 0px 16px;
+    margin: 45px 14px 0px 14px;
+}
+.about{
+    height: 721px;
+    background-color: white;
+}
+.about h2{
+    font-size: 33px;
+    color: rgb(38, 50, 68);
+    text-align: center;
+    padding-top: 110px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.about .about_divider{
+    display: block;
+    height: 3px;
+    width: 72px;
+    background-color:  #cf7702;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.about img{
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.about p{
+    display: block;
+    width: 723px;
+    color:rgb(38, 50, 68);
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.about input{
+    display: block;
+    height: 35px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: url(../img/icon.png) left 13px center no-repeat;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 8px 14px 15px 34px;
+    
+}
+.skills{
+    height: 522px;
+    background: url(../img/bg_skills.jpg);
+}
+.skills .skills_header{
+    font-size: 33px;
+    color: rgb(38, 50, 68);
+    text-align: center;
+    padding-top: 110px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.skills .skills_divider{
+    display: block;
+    height: 3px;
+    width: 72px;
+    background-color:  #cf7702;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.skills .skills_wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 110px 420px 0px 420px;
+}
+.skills .skills_wrapper .skills_item{
+    width: 210px;
+    text-align: center;
+}
+.skills .skills_wrapper .skills_item .skills_subheader{
+    color:#cf7702;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 42px auto 20px auto;
+}
+.skills .skills_wrapper .skills_item .skills_descr{
+    color:rgb(38, 50, 68);
+    font-size: 14px;
+}
+.cases{
+    height:1300px;
+}
+.cases .cases_header{
+    font-size: 33px;
+    color: rgb(38, 50, 68);
+    text-align: center;
+    padding-top: 110px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 auto;
+}
+.cases .cases_divider{
+    display: block;
+    height: 3px;
+    width: 72px;
+    background-color:  #cf7702;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.cases .cases_descr{
+    font-family: Arial;
+    color:rgb(38, 50, 68);
+    font-size: 16px;
+    margin: 44px auto 45px;
+    text-align: center;
+}
+.cases .cases_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.cases .cases_wrapper .cases_links{
+    width: 205px;
+    margin-left: 389px;
+}
+.cases .cases_wrapper .cases_descr{
+    text-align: left;
+    margin-top: 0;
+    margin-left: 10px;
+    width: 950px;
+}
+.cases .cases_wrapper .cases_links{
+    margin-top: 0px;
+}
+.cases .cases_wrapper .cases_links p{
+    font-size: 16px;
+    font-family: "Calibri";
+    color: rgb(63, 73, 90);
+}
+.cases .cases_wrapper .cases_links .cases_txtclient{
+    text-transform: uppercase;
+    font-size: 21px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(56, 67, 84);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cases .cases_wrapper .cases_links .cases_txtweb{
+    text-transform: uppercase;
+    font-size: 21px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(56, 67, 84);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cases .cases_wrapper .cases_descr .cases_project{
+    font-size: 25px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(56, 67, 84);
+    padding-top: 8px;
+    padding-bottom: 15px;
+}
+.cases .cases_wrapper .cases_descr .cases_project p{
+    text-align: left;
+    font-size: 16px;
+    font-family: "Calibri";
+    color: rgb(63, 73, 90);
+}
+.cases .cases_wrapper .cases_links .cases_btn input{
+    width:150px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #63b5ae;
+    background-color: #63b5ae;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.cost{
+    height: 850px;
+}
+.cost .cost_header{
+    font-size: 33px;
+    color: rgb(38, 50, 68);
+    text-align: center;
+    padding-top: 110px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+.cost .cost_subheader{
+    font-size: 27px;
+    color: rgb(38, 50, 68);
+    text-align: left;
+    padding-top: 110px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    margin: 0px auto;
+}
+.cost .cost_sub2{
+    padding-top: 50px;
+    text-align: left;
+}
+.cost .cost_calc{
+    display: block;
+    position: relative;
+    height: 530px;
+    width: 900px;
+    margin: 50px auto;
+
+}
+.cost .cost_calc select{
+    width: 900px;
+    height: 60px;
+    background:#eeeeee;
+}
+.cost .cost_calc  p{
+    font-size: 16px;
+    color: rgb(115, 115, 115);
+}
+.cost .cost_calc .cost_divider{
+    display: block;
+    height: 3px;
+    width: 900px;
+    margin: 0 auto;
+    background-color: rgb(115, 115, 115);
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.cost .cost_calc .cost_table{
+    width: 990px;
+}
+.cost .cost_cslc .cost_td{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(38, 50, 68)
+}
+.stat{
+    margin-top: 156px;
+    height: 500px;
+    background: url(../img/stat_bg.jpg);
+}
+.stat .stat_header{
+    font-size: 33px;
+    color: rgb(38, 50, 68);
+    text-align: center;
+    padding-top: 100px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+.stat .stat_divider{
+    display: block;
+    height: 3px;
+    width: 72px;
+    background-color:  #cf7702;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.stat .stat_wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    margin-left: 445px;
+    margin-right: 365px;
+}
+.stat .stat_wrapper .stat_item{
+    width: 170px;
+    align-items: center;
+}
+.stat .stat_wrapper .stat_item .stat_img{
+    margin: 31px auto 25px;
+    margin-left: 54px;
+}
+.stat .stat_wrapper .stat_item .stat_num{
+    text-align: center;
+    font-size: 37px;
+    font-weight: 500;
+    font-family: "Impact";
+}
+.stat .stat_wrapper .stat_item .stat_lett{
+    text-align: center;
+    font-family: "Impact";
+    color: rgb(50, 62, 79);
+    font-style: 16px;
+    margin-top: 35px;
+}
+.review{
+    height: 593px;
+    width: 100%;
+}
+.review .review_header{
+    font-size: 33px;
+    color: rgb(38, 50, 68);
+    text-align: center;
+    padding-top: 100px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+.review .review_divider{
+    display: block;
+    height: 3px;
+    width: 72px;
+    background-color:  #cf7702;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.review .review_item{
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 55px;
+}
+.review .review_item .review_img{
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.review .review_item p{
+    text-align: center;
+    margin: 0 auto;
+    color:rgb(38, 50, 68);
+    font-size: 16px;
+}
+  .review .review_item .review_form{
+      display: flex;
+      margin: 53px 49%;
+      align-items: center;
+      border-color:#cf7702;
+}
+.contacts {
+    height: 810px;
+    background: url(../img/contacts.jpg);
+}
+.contacts .contacts_header{
+    font-size: 33px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Medium";
+}
+.contacts .contacts_divider{
+    display: block;
+    height: 3px;
+    width: 72px;
+    background-color:  #d17700;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.contacts .contacts_subheader{
+    margin: 35px auto;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: "Calibri";
+}
+.contacts .contacts_wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 650px;
+    margin-right: 660px;
+}
+.contacts .contacts_wrapper .contacts_item{
+    width: 160px;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+.contacts .contacts_wrapper .contacts_item .contacts_img{
+    margin-bottom: 15px;
+}
+.contacts .contacts_wrapper .contacts_item .contacts_txt{
+    color: white;
+}
+.contacts .contacts_header2 {
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    font-family: "Franklin Gothic Medium";
+    padding-top: 40px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+.contacts .contacts_placeholders{
+    display: inline-block;
+    width: 740px;
+    margin-left: 596px;
+    margin-top: 47px;
+}
+.contacts .contacts_placeholders input {
+    display: inline-block;
+    width: 350px;
+    height: 38px;
+    margin: 0 auto;
+    align-items: center;
+    margin-right: 15px;
+} 
+.contacts .contacts_placeholders2 textarea {
+    display: inline-block;
+    width: 720px;
+    height: 96px;
+    margin: 15px 596px auto;
+}
+.contacts  .contacts_btn{
+    display: inline-block;
+    width: 125px;
+    height: 44px;
+    text-align: center;
+    border: 2px solid white;
+    background: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 897px;
+    color: white;
+}
+.footer{
+    width: 100%;
+    height: 95px;
+    background-color: #344051;
+}
+.footer p{
+    font-family: "Arial";
+    text-align: center;
+    padding-top: 44px;
+    color: white;
+    font-size: 15px;
+}
+  
