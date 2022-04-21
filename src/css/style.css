@@ -1,11 +1,32 @@
+@font-face {
+    font-family: 'FranklinGothic';
+    font-weight: normal;
+    font-style: normal;
+    src: local('ITC Franklin Gothic Book'), local('ITC-Franklin-Gothic-Book'),
+        url('../fonts/ITCFranklinGothicStd-Book.woff2') format('woff2'),
+        url('../fonts/ITCFranklinGothicStd-Book.woff') format('woff'),
+        url('../fonts/ITCFranklinGothicStd-Book.ttf') format('truetype');
+  }
+@font-face{
+    @font-face {
+        font-family: 'Calibri';
+        src: local('Calibri'),
+            url('../fonts/Calibri.woff2') format('woff2'),
+            url('../fonts/Calibri.woff') format('woff');2
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+}
 body{
-    font-family: Arial, sans-serif;
+    font-family: "FranklinGothic", sans-serif;
 }
 nav{
     position: fixed;
     width: 100%;
     height: 60px;
     background: #344051;
+    z-index: 10;
 }
 @keyframes comming{
     from{
@@ -32,7 +53,7 @@ nav{
     }
     to{
         opacity: 1;
-        margin-left: 404px;
+        margin-left: 0px;
     }
  }
  @keyframes cases_move{
@@ -60,21 +81,19 @@ nav{
     color: white;
     font-size: 28px;
     line-height: 60px;
-    padding-left: 388px;
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
     animation: comming 2s ease;
 }
 .menu{
     float: left;
-    padding-left: 430px;
 }
 .menu li{
     float: left;
     line-height: 60px;
     color: white;
     margin-right: 40px;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     -webkit-animation: topshift 0.4s ease forwards;
     -o-animation: topshift 0.4s ease forwards;
@@ -86,6 +105,7 @@ nav{
     transition: all 0.1s;
     color: white;
     transform: scale(1);
+    text-decoration: none;
 }
 .menu li a:visited{
     color: white;
@@ -118,9 +138,9 @@ nav{
 }
 .title_container{
     float: left;
-    margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    width: 100%;
     opacity: 0;
     -webkit-animation: titlemove 1s ease forwards;
     -o-animation: titlemove 1s ease forwards;
@@ -130,8 +150,9 @@ nav{
     animation-delay: 2s;
 }
 .title_container h1{
-    font-size: 60px;
-    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 72px;
+    font-weight: 600;
 }
 .title_container h4{
     margin-top: 30px;
@@ -169,6 +190,7 @@ nav{
     padding-top: 110px;
     text-transform: uppercase;
     font-weight: bold;
+    margin-bottom: 0px;
 }
 .about .about_divider{
     display: block;
@@ -181,23 +203,22 @@ nav{
 .about img{
     display: block;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .about p{
     display: block;
-    width: 723px;
     color:rgb(38, 50, 68);
     font-size: 16px;
-    margin: 0 auto;
     margin-top: 25px;
+    margin-bottom: 0px;
 }
 .about input{
     display: block;
     height: 35px;
     text-align: center;
+    line-height: 100%;
     border: 2px solid #6d7682;
-    background: url(../img/icon.png) left 13px center no-repeat;
+    background: url(../img/icon.png) left 14px center no-repeat;
     border-radius: 5px;
     color: #6d7682;
     font-size: 13px;
@@ -220,10 +241,13 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.skills .skills_header{
-    font-size: 33px;
-    color: rgb(38, 50, 68);
+.skills .container{
+    height: 100%;
+}
+.skills h2{
     text-align: center;
+    font-size: 30px;
+    color: rgb(38, 50, 68);
     padding-top: 110px;
     text-transform: uppercase;
     font-weight: bold;
@@ -236,27 +260,31 @@ nav{
     margin: 0 auto;
     margin-top: 35px;
 }
-.skills .skills_wrapper{
-    display: flex;
-    justify-content: space-between;
-    margin: 110px 420px 0px 420px;
+.skills img{
+    height: 44px;
+    width: 55px;
+    margin-bottom: 42px;
 }
-.skills .skills_wrapper .skills_item{
-    width: 210px;
+.skills .skills_item{
     text-align: center;
+    width: 215px;
+    margin: 78px auto;
 }
-.skills .skills_wrapper .skills_item .skills_subheader{
+.skills .skills_item .skills_title{
     color:#cf7702;
     font-size: 19px;
     font-weight: bold;
-    margin: 42px auto 20px auto;
 }
-.skills .skills_wrapper .skills_item .skills_descr{
+.skills .skills_item .skills_descr{
     color:rgb(38, 50, 68);
-    font-size: 14px;
+    font-size: 15px;
+    font-family: "Calibri";
 }
 .cases{
-    height:1300px;
+    height:1100px;
+}
+.cases .contaier{
+    height: 100%;
 }
 .cases .cases_header{
     font-size: 33px;
@@ -282,76 +310,58 @@ nav{
     margin: 44px auto 45px;
     text-align: center;
 }
-.cases .cases_wrapper{
-    display: flex;
-    justify-content: space-between;
-    opacity: 0;
-    -webkit-animation: cases_move 1s ease forwards;
-    -o-animation: cases_move 1s ease forwards;
-    animation: cases_move 1s ease forwards;
-    -webkit-animation-delay: 2s;
-    -o-animation-delay: 2s;
-    animation-delay: 2s;
+.cases .container{
+    height: 100%;
 }
-.cases .cases_wrapper .cases_links{
-    width: 205px;
-    margin-left: 389px;
+.cases img{
+    width: 100%;
 }
-.cases .cases_wrapper .cases_descr{
-    text-align: left;
-    margin-top: 0;
-    margin-left: 10px;
-    width: 950px;
-}
-.cases .cases_wrapper .cases_links{
-    margin-top: 0px;
-}
-.cases .cases_wrapper .cases_links p{
+.cases .cases_links{
     font-size: 16px;
     font-family: "Calibri";
     color: rgb(63, 73, 90);
 }
-.cases .cases_wrapper .cases_links .cases_txtclient{
+.cases .cases_links .link_website{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.cases .cases_links .cases_titleleft{
     text-transform: uppercase;
     font-size: 21px;
-    font-family: "Franklin Gothic Medium";
-    color: rgb(56, 67, 84);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-weight: bold;
 }
-.cases .cases_wrapper .cases_links .cases_txtweb{
-    text-transform: uppercase;
-    font-size: 21px;
-    font-family: "Franklin Gothic Medium";
-    color: rgb(56, 67, 84);
-    padding-top: 10px;
-    padding-bottom: 10px;
+.cases .cases_links p{
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(63, 73, 90);
 }
-.cases .cases_wrapper .cases_descr .cases_project{
+.cases .cases_project{
+    font-weight: bold;
     font-size: 25px;
-    font-family: "Franklin Gothic Medium";
-    color: rgb(56, 67, 84);
-    padding-top: 8px;
-    padding-bottom: 15px;
-}
-.cases .cases_wrapper .cases_descr .cases_project p{
-    text-align: left;
-    font-size: 16px;
     font-family: "Calibri";
-    color: rgb(63, 73, 90);
+    color: rgb(56, 67, 84);
 }
-.cases .cases_wrapper .cases_links .cases_btn input{
+.cases .text_project{
+    font-size: 17px;
+    color: rgb(63, 73, 90);
+    font-weight: 600;
+}
+.cases .cases_btn input{
+    color: white;
     width:150px;
     height: 40px;
     text-align: center;
     border: 2px solid #63b5ae;
     background-color: #63b5ae;
     border-radius: 5px;
-    font-size: 16px;
-    margin-top: 20px;
+}
+.cases a:hover{
+    color: #d17700;
 }
 .cases input:hover{
     background-color: #344051;
+    border-color: #344051;
     color: #cf7702;
  }
  .cases input:active{
@@ -366,55 +376,60 @@ nav{
     text-align: center;
     padding-top: 110px;
     font-weight: bold;
-    margin: 0 auto;
 }
 .cost .cost_subheader{
-    font-size: 27px;
+    font-size: 22px;
     color: rgb(38, 50, 68);
     text-align: left;
-    padding-top: 110px;
-    padding-bottom: 25px;
     font-weight: bold;
-    margin: 0px auto;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
-.cost .cost_sub2{
-    padding-top: 50px;
-    text-align: left;
+.cost .cost_table{
+    margin-top: 10px;
 }
-.cost .cost_calc{
-    display: block;
-    position: relative;
-    height: 530px;
-    width: 900px;
-    margin: 50px auto;
-
+.cost .cost_var{
+    width: 895px;
+    height: 55px;
+    margin-bottom: 50px;
+    background-color: #faf7f7;
 }
-.cost .cost_calc select{
-    width: 900px;
-    height: 60px;
-    background:#eeeeee;
-}
-.cost .cost_calc  p{
-    font-size: 16px;
-    color: rgb(115, 115, 115);
-}
-.cost .cost_calc .cost_divider{
-    display: block;
-    height: 3px;
-    width: 900px;
-    margin: 0 auto;
-    background-color: rgb(115, 115, 115);
+.cost .table{
+    width: 895px;
     margin-top: 40px;
-    margin-bottom: 30px;
+    
 }
-.cost .cost_calc .cost_table{
-    width: 990px;
-}
-.cost .cost_cslc .cost_td{
+.cost .cost_tbody td{
+    text-align: end;
     font-size: 16px;
     font-weight: bold;
     color: rgb(38, 50, 68)
 }
+.cost .cost_tbody th{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(38, 50, 68)
+}
+.cost .cost_btn{
+    width: 200px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    border: 2px solid #63b5ae;
+    background-color: #63b5ae;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 40px;
+    line-height: 100%;
+}
+.cost button:hover{
+    color: #d17700;
+ }
+
+ .cost button:active{
+    transform: scale(1.1);
+ }
 .stat{
     margin-top: 156px;
     height: 500px;
@@ -441,37 +456,31 @@ nav{
     margin: 0 auto;
     margin-top: 30px;
 }
-.stat .stat_wrapper{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 55px;
-    margin-left: 445px;
-    margin-right: 365px;
-}
-.stat .stat_wrapper .stat_item{
-    width: 170px;
-    align-items: center;
-}
-.stat .stat_wrapper .stat_item .stat_img{
-    margin: 31px auto 25px;
-    margin-left: 54px;
-}
-.stat .stat_wrapper .stat_item .stat_num{
+.stat .stat_item{
     text-align: center;
+    margin-bottom: 58px;
+    margin-top: 75px;
+}
+.stat .stat_item .stat_num{
     font-size: 37px;
     font-weight: 500;
     font-family: "Impact";
+    margin-top: 25px;
 }
-.stat .stat_wrapper .stat_item .stat_lett{
-    text-align: center;
+.stat .stat_item .stat_lett{
     font-family: "Impact";
     color: rgb(50, 62, 79);
     font-style: 16px;
-    margin-top: 35px;
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: normal;
 }
 .review{
     height: 593px;
     width: 100%;
+}
+.review .container{
+    height: 100%;
 }
 .review .review_header{
     font-size: 33px;
@@ -491,10 +500,6 @@ nav{
     margin-top: 30px;
 }
 .review .review_item{
-    display: block;
-    margin: 0 auto;
-    align-items: center;
-    padding-top: 55px;
     opacity: 0;
     -webkit-animation: review_move 1s ease forwards;
     -o-animation: review_move 1s ease forwards;
@@ -503,29 +508,32 @@ nav{
     -o-animation-delay: 2s;
     animation-delay: 2s;
 }
-.review .review_item .review_img{
+.review .row .review_img{
     display: block;
     margin: 0 auto;
     align-items: center;
     padding-bottom: 40px;
+    padding-top: 60px;
 }
-.review .review_item p{
+.review .review_txt p{
     text-align: center;
-    margin: 0 auto;
     color:rgb(38, 50, 68);
     font-size: 16px;
+    font-family: "Calibri";
+    font-weight: 600;
 }
-  .review .review_item .review_form{
-      display: flex;
-      margin: 53px 49%;
-      align-items: center;
-      border-color:#cf7702;
+.review .radio{
+    margin-top: 30px;
+    text-align: center;
 }
-.contacts {
+.contacts{
     height: 810px;
-    background: url(../img/contacts.jpg);
+    background: url(../img/contacts.jpg) center/cover no-repeat;
 }
-.contacts .contacts_header{
+.container{
+    height: 100%;
+}
+.container .contacts_header{
     font-size: 33px;
     color: white;
     text-align: center;
@@ -533,7 +541,6 @@ nav{
     font-weight: bold;
     margin: 0 auto;
     text-transform: uppercase;
-    font-family: "Franklin Gothic Medium";
 }
 .contacts .contacts_divider{
     display: block;
@@ -543,72 +550,53 @@ nav{
     margin: 0 auto;
     margin-top: 30px;
 }
-.contacts .contacts_subheader{
-    margin: 35px auto;
+.contacts .contacts_descr{
+    color:white;
+    margin-top: 33px;
     text-align: center;
-    color: white;
     font-size: 16px;
     font-family: "Calibri";
 }
-.contacts .contacts_wrapper{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 650px;
-    margin-right: 660px;
-}
-.contacts .contacts_wrapper .contacts_item{
-    width: 160px;
-    align-items: center;
-    color: white;
+.contacts .contacts_item{
     text-align: center;
-    font-size: 16px;
+    color:white;
 }
-.contacts .contacts_wrapper .contacts_item .contacts_img{
+.contacts .contacts_item a{
+    text-decoration: none;
+    color: white;
+
+}
+.contacts .contacts_item img{
     margin-bottom: 15px;
 }
-.contacts .contacts_wrapper .contacts_item .contacts_txt{
-    color: white;
-}
-.contacts .contacts_header2 {
+.contacts .contacts_header2{
     font-size: 21px;
     color: white;
     text-align: center;
-    font-family: "Franklin Gothic Medium";
     padding-top: 40px;
     font-weight: bold;
-    margin: 0 auto;
     text-transform: uppercase;
 }
-.contacts .contacts_placeholders{
-    display: inline-block;
-    width: 740px;
-    margin-left: 596px;
-    margin-top: 47px;
+.contacts .placeholders{
+    margin-left: 40px;
 }
-.contacts .contacts_placeholders input {
-    display: inline-block;
-    width: 350px;
+.contacts .placeholder1{
+    width:350px;
     height: 38px;
-    margin: 0 auto;
+    margin-top: 47px;
+    background-color: white;
     align-items: center;
-    margin-right: 15px;
-} 
-.contacts input:hover{
-    background: white;
-    color: #344051;
- }
-
- .contacts input:active{
-    transform: scale(1.1);
- }
-.contacts .contacts_placeholders2 textarea {
-    display: inline-block;
-    width: 720px;
+    justify-content: center;
+}
+.contacts .placeholder3{
+    width: 790px;
     height: 96px;
-    margin: 15px 596px auto;
+    margin-top: 15px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
 }
 .contacts  .contacts_btn{
-    display: inline-block;
     width: 125px;
     height: 44px;
     text-align: center;
@@ -616,20 +604,37 @@ nav{
     background: none;
     border-radius: 5px;
     font-size: 16px;
+    line-height: 100%;
     margin-top: 30px;
-    margin-left: 897px;
+    margin-left:40px;
     color: white;
 }
+.contacts a:hover{
+    color: #d17700;
+}
+.contacts button:hover{
+    background: white;
+    color: #d17700;
+ }
+
+ .contacts button:active{
+    transform: scale(1.1);
+ }
 .footer{
     width: 100%;
     height: 95px;
     background-color: #344051;
 }
+.footer .container{
+    height: 100%;
+}
 .footer p{
     font-family: "Arial";
     text-align: center;
     padding-top: 44px;
-    color: white;
+    color: white;   
     font-size: 15px;
 }
-  
+.white-btn:visited{
+    color: white;
+}
