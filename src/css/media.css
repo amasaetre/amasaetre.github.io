@@ -223,7 +223,7 @@
         margin-left: 200px;
     }
 }
-@media (min-width:10px) and (max-width:576px){
+@media (max-width:576px){
     .cost .cost_subheader{
         margin-left: 20px;
     }
@@ -268,5 +268,58 @@
     }
     .contacts .contacts_btn{
         margin-left: 205px;
+    }
+}
+@media (min-width:1px) and (max-width:576px){
+    .contacts{
+        height: 1050px;
+    }
+    .contacts .container{
+        height: 100%;
+    }
+    .contacts .contacts_item{
+        margin-top: 20px;
+    }
+    .contacts .contacts_header2{
+        padding-top: 20px;
+    }
+    .contacts .placeholders{
+        margin-left: 65px;
+        width: 70%;
+    }
+}
+@media  (min-width: 500px) and (max-width:576px){
+    .contacts .contacts_btn{
+        margin-left: 180px;
+    }
+}
+@media  (min-width: 450px) and (max-width:500px){
+    .contacts .contacts_btn{
+        margin-left: 150px;
+    }
+}
+@media  (min-width: 400px) and (max-width:450px){
+    .contacts .contacts_btn{
+        margin-left: 130px;
+    }
+}
+@media  (min-width: 350px) and (max-width:400px){
+    .contacts .contacts_btn{
+        margin-left: 110px;
+    }
+}
+@media  (min-width: 300px) and (max-width:350px){
+    .contacts .contacts_btn{
+        margin-left: 90px;
+    }
+    .contacts{
+        height: 1150px;
+    }
+    .contacts .container{
+        height: 100%;
+    }
+    .contacts .placeholders{
+        margin-left: 45px;
+        width: 70%;
     }
 }
