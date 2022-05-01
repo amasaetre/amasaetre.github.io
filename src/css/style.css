@@ -59,7 +59,7 @@ nav{
  @keyframes cases_move{
     from{
         opacity: 0;
-        margin-left: -500px;
+        margin-left: -1500px;
     }
     to{
         opacity: 1;
@@ -85,6 +85,10 @@ nav{
     -o-animation: comming 2s ease;
     animation: comming 2s ease;
 }
+.logo a{
+    text-decoration: none;
+    color: white;
+}
 .menu{
     float: left;
 }
@@ -99,6 +103,9 @@ nav{
     -o-animation: topshift 0.4s ease forwards;
     animation: topshift 0.4s ease forwards;
     opacity: 0;
+}
+.active{
+    font-size: 19px;
 }
 .menu li a {
     display: inline-block;
@@ -482,6 +489,38 @@ nav{
 .review .container{
     height: 100%;
 }
+.review .rev_slider{
+    margin-top: 60px;
+}
+.slick-prev:before, .slick-next:before {
+    color:rgb(38, 50, 68);
+}
+.review .rev_slider .slide .photo1{
+    background-image: url(../img/man.png);
+}
+.review .rev_slider .slide .photo2{
+    background-image: url(../img/cat.jpg);
+}
+.review .rev_slider .slide .photo3{
+    background-image: url(../img/anteater.jpg);
+}
+.review .rev_slider .slide .photo{
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding-top: 60px;
+}
+.review .rev_slider .slide .text p{
+    text-align: center;
+    margin-top: 40px;
+}
+.review .rev_slider .slide .name p{
+    text-align: center;
+    margin-top: 40px;
+}
 .review .review_header{
     font-size: 33px;
     color: rgb(38, 50, 68);
@@ -498,33 +537,6 @@ nav{
     background-color:  #cf7702;
     margin: 0 auto;
     margin-top: 30px;
-}
-.review .review_item{
-    opacity: 0;
-    -webkit-animation: review_move 1s ease forwards;
-    -o-animation: review_move 1s ease forwards;
-    animation: review_move 1s ease forwards;
-    -webkit-animation-delay: 2s;
-    -o-animation-delay: 2s;
-    animation-delay: 2s;
-}
-.review .row .review_img{
-    display: block;
-    margin: 0 auto;
-    align-items: center;
-    padding-bottom: 40px;
-    padding-top: 60px;
-}
-.review .review_txt p{
-    text-align: center;
-    color:rgb(38, 50, 68);
-    font-size: 16px;
-    font-family: "Calibri";
-    font-weight: 600;
-}
-.review .radio{
-    margin-top: 30px;
-    text-align: center;
 }
 .contacts{
     height: 810px;
@@ -637,4 +649,19 @@ nav{
 }
 .white-btn:visited{
     color: white;
+}
+.element-animation {
+    opacity: 0;
+}
+.element-animation.show-animation{
+    opacity: 1;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
+}
+.stat .stat_item .element-animation.show-animation{
+    opacity: 1;
+    -webkit-animation: cases_move 1s ease forwards;
+    -o-animation: cases_move 1s ease forwards;
+    animation: cases_move 1s ease forwards;
 }

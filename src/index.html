@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="/src/slick/slick.css">
+    <link rel="stylesheet" href="/src/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -17,17 +19,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-2 col-lg-3 col-7">
-                        <div class="logo">Андрей Браун</div>
+                        <div class="logo"><a href="#maiN">Андрей Браун</a></div>
                     </div>
                     <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
                         <div class="menu">
                             <ul>
-                                <li><a href="#">Обо мне</a></li>
-                                <li><a href="#">Услуги</a></li>
-                                <li><a href="#">Кейсы</a></li>
-                                <li><a href="#">Прайс</a></li>
-                                <li><a href="#">Отзывы</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a class="active" href="#abouT">Обо мне</a></li>
+                                <li><a href="#skillS">Услуги</a></li>
+                                <li><a href="#caseS">Кейсы</a></li>
+                                <li><a href="#cosT">Прайс</a></li>
+                                <li><a href="#revieW">Отзывы</a></li>
+                                <li><a href="#contactS">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -38,12 +40,12 @@
                             </a>
                           
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Обо мне</a></li>
-                              <li><a class="dropdown-item" href="#">Услуги</a></li>
-                              <li><a class="dropdown-item" href="#">Кейсы</a></li>
-                              <li><a class="dropdown-item" href="#">Прайс</a></li>
-                              <li><a class="dropdown-item" href="#">Отзывы</a></li>
-                              <li><a class="dropdown-item" href="#">Контакты</a></li>
+                              <li><a class="dropdown-item" href="#abouT">Обо мне</a></li>
+                              <li><a class="dropdown-item" href="#skillS">Услуги</a></li>
+                              <li><a class="dropdown-item" href="#caseS">Кейсы</a></li>
+                              <li><a class="dropdown-item" href="#cosT">Прайс</a></li>
+                              <li><a class="dropdown-item" href="#revieW">Отзывы</a></li>
+                              <li><a class="dropdown-item" href="#contactS">Контакты</a></li>
                             </ul>
                           </div>
                     </div>
@@ -51,7 +53,7 @@
             </div>
         </nav>
     </header>
-    <section class="main">
+    <section class="main section" id="maiN">
         <div class="container h-100">
             <div class="row align-items-center h-100">
                 <div class="col-lg-6 mt-5 pt-5">
@@ -65,7 +67,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about section" id="abouT">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-2 offset-xxl-5">
@@ -74,8 +76,8 @@
                 <div class="col-xxl-2 offset-xxl-5">
                     <div class="about_divider"></div>
                 </div>
-                <img class="col-2 offset-5" src="/src/img/wb_guy.png" alt="шапка">
-                <div class="p_container col-8 offset-2">
+                <img class="col-2 offset-5 element-animation" src="/src/img/wb_guy.png" alt="шапка">
+                <div class="p_container col-8 offset-2 element-animation">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus delectus consequuntur tenetur rerum et, voluptatibus quos vitae animi voluptatum magni quaerat odio ab.</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus delectus consequuntur tenetur rerum et, voluptatibus quos vitae animi voluptatum magni quaerat odio ab.</p>
                 </div>
@@ -85,7 +87,7 @@
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills section" id="skillS">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-2  offset-xxl-5 ">
@@ -97,28 +99,28 @@
             </div>
             <div class="row">
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="skills_item">
+                    <div class="skills_item element-animation">
                         <img src="../src/img/comp.png" alt="comp">
                         <p class="skills_title">Веб-дизайн</p>
                         <p class="skills_descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus impedit nisi ad veritatis voluptatem praesentium.</p>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="skills_item">
+                    <div class="skills_item element-animation">
                         <img src="../src/img/code.png" alt="code">
                         <p class="skills_title">Разработка</p>
                         <p class="skills_descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus impedit nisi ad veritatis voluptatem praesentium.</p>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="skills_item">
+                    <div class="skills_item element-animation">
                         <img src="../src/img/rocket.png" alt="rocket">
                         <p class="skills_title">CEO-Оптимизация</p>
                         <p class="skills_descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus impedit nisi ad veritatis voluptatem praesentium.</p>
                     </div>
                 </div>  
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="skills_item">
+                    <div class="skills_item element-animation">
                         <img src="../src/img/gramophone.png" alt="gramophone">
                         <p class="skills_title">Маркетинг</p>
                         <p class="skills_descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus impedit nisi ad veritatis voluptatem praesentium.</p>
@@ -127,7 +129,7 @@
             </div>
         </div>
     </section>
-    <section class="cases">
+    <section class="cases section" id="caseS">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-2 offset-xxl-5">
@@ -140,7 +142,19 @@
                     <p class="cases_descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, nesciunt dolorem esse rem architecto amet libero aliquid!</p>
                 </div>
                 <div class="col-12">
-                    <img src="../src/img/cases_bg.jpg" alt="картинка с примером работы" class="cases_img">
+                    <div class="cases_slider">
+                        <div class="slide">
+                            <img src="../src/img/cases_bg.jpg" alt="1">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../src/img/cases_bg.jpg" alt="2">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../src/img/cases_bg.jpg" alt="3">
+                        </div>
+                    </div>
                 </div>
                 <div class="col-xxl-2 text-nowrap">
                     <div class="cases_links">
@@ -150,7 +164,7 @@
                         <a class="link_website" href="http://www.random.org" target="_blank">http://www.random.org</a></p>
                     </div>
                 </div>
-                <div class="col-xxl-9 offset-xxl-1">
+                <div class="col-xxl-9 offset-xxl-1 element-animation">
                     <div class="cases_project">Название проекта</div>
                     <p class="text_project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, explicabo voluptatem officiis ipsum temporibus ut fugiat enim est corporis possimus vitae deserunt rem repellat qui, aliquid quam laboriosam, culpa natus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, optio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum optio impedit dolores aspernatur ratione fugiat facilis deleniti vel, nesciunt nam.</p>
                 </div>
@@ -162,7 +176,7 @@
             </div>
         </div>
     </section>
-    <section class="cost">
+    <section class="cost section" id="cosT">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-4 offset-xxl-4">
@@ -170,38 +184,37 @@
                 </div>
                 <div class="col-xxl-10 col-xl-10 col-lg-9 col-md-10 col-sm-10 offset-xxl-2 offset-xl-1 offset-lg-1  offset-md-0 offset-sm-0 cost_table">
                     <h3 class="cost_subheader">тип сайта</h3>
-                    <select class="form-select form-select-lg mb-3 cost_var" aria-label=".form-select-lg example">
-                        <option selected>Выберите пункт...</option>
-                        <option value="1">Один</option>
-                        <option value="2">Два</option>
-                        <option value="3">Три</option>
+                    <select onchange="calc()" id="type_web" class="form-select form-select-lg mb-3 cost_var" aria-label=".form-select-lg example">
+                        <option value="0">Выберите пункт...</option>
+                        <option value="3000">Сайт-визитка</option>
+                        <option value="4000">Интернет-портал</option>
+                        <option value="10000">Сайт электронной коммерции</option>
                       </select>
                       <h3 class="cost_subheader">дизайн</h3>
-                      <select class="form-select form-select-lg mb-3 cost_var" aria-label=".form-select-lg example">
-                          <option selected>Выберите пункт...</option>
-                          <option value="1">Один</option>
-                          <option value="2">Два</option>
-                          <option value="3">Три</option>
+                      <select onchange="calc()" id="type_design" class="form-select form-select-lg mb-3 cost_var" aria-label=".form-select-lg example">
+                          <option value="0">Выберите пункт...</option>
+                          <option value="5000">Корпоративный</option>
+                          <option value="6000">Классический</option>
+                          <option value="7000">С эффектом параллакса</option>
                         </select>
                         <h3 class="cost_subheader">адаптивность</h3>
-                        <select class="form-select form-select-lg mb-3 cost_var" aria-label=".form-select-lg example">
-                            <option selected>Выберите пункт...</option>
-                            <option value="1">Один</option>
-                            <option value="2">Два</option>
-                            <option value="3">Три</option>
+                        <select onchange="calc()" id="type_html" class="form-select form-select-lg mb-3 cost_var" aria-label=".form-select-lg example">
+                            <option value="0">Выберите пункт...</option>
+                            <option value="10000">Адаптировать сайт</option>
+                            <option value="0">Не адаптировать сайт</option>
                           </select>
 
                           <table class="table">
                             <thead class="cost_line">
                             </thead>
                             <tbody class="cost_tbody">
-                              <tr>
-                                <th scope="row">Сроки</th>
-                                <td>0</td>
-                              </tr>
+                                <tr>
+                                    <th scope="row">Сроки</th>
+                                    <td><span>~ 5</span> дней</td>
+                                  </tr>
                               <tr>
                                 <th scope="row">Стоимость</th>
-                                <td>0</td>
+                                <td><span id="result">0</span> руб.</td>
                               </tr>
                             </tbody>
                           </table>
@@ -212,7 +225,7 @@
             </div>
         </div>
     </section>
-    <section class="stat">
+    <section class="stat" id="staT">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-4 offset-xxl-4">
@@ -225,28 +238,28 @@
                     <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
                         <div class="stat_item">
                             <img src="../src/img/smile.png" alt="1" class="stat_img">
-                            <div class="stat_num">120</div>
+                            <div class="stat_num element-animation">120</div>
                             <div class="stat_lett">счастливых клиентов</div>
                         </div>
                     </div>
                     <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
                         <div class="stat_item">
                             <img src="../src/img/tag.png" alt="1" class="stat_img">
-                            <div class="stat_num">4,600</div>
+                            <div class="stat_num element-animation">4,600</div>
                             <div class="stat_lett">часов работы</div>
                         </div>
                     </div>
                     <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
                         <div class="stat_item">
                             <img src="../src/img/mark.png" alt="1" class="stat_img">
-                            <div class="stat_num">340</div>
+                            <div class="stat_num element-animation">340</div>
                             <div class="stat_lett">проектов завершено</div>
                         </div>
                     </div>
                     <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
                         <div class="stat_item">
                             <img src="../src/img/cup.png" alt="1" class="stat_img">
-                            <div class="stat_num">23</div>
+                            <div class="stat_num element-animation">23</div>
                             <div class="stat_lett">наград получено</div>
                         </div>
                     </div>
@@ -254,7 +267,7 @@
             </div>
         </div>
     </section>
-    <section class="review">
+    <section class="review section" id="revieW">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-2 offset-xxl-5">
@@ -263,34 +276,29 @@
                 <div class="col-xxl-2 offset-xxl-5">
                     <div class="review_divider"></div>
                 </div>
-                <div class="col-xxl-2 offset-xxl-5">
-                    <img src="../src/img/man.png" alt="man" class="review_img">
+            </div>
+            <div class="rev_slider">
+                <div class="slide">
+                    <div class="photo photo1"></div>
+                    <div class="text"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quasi quis rem vel ipsum eligendi voluptatum asperiores doloremque nihil veritatis!</p></div>
+                    <div class="name"><p><strong>Михаил</strong>, Ген директор ПАО "Газпром"</p></div>
                 </div>
-                <div class="col-xxl-8 offset-xxl-2">
-                    <div class="review_txt">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quasi quis rem vel ipsum eligendi voluptatum asperiores doloremque nihil veritatis! <br> <br> <strong>Михаил</strong>, Ген директор ПАО "Газпром"</p>
-                    </div>
+
+                <div class="slide">
+                    <div class="photo photo2"></div>
+                    <div class="text"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quasi quis rem vel ipsum eligendi voluptatum asperiores doloremque nihil veritatis!</p></div>
+                    <div class="name"><p><strong>Владимир</strong>, Ген директор ПАО "Лукойл"</p></div>
                 </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 offset-xxl-5 offset-xl-5 offset-lg-5">
-                    <div class="radio">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label" for="inlineRadio1"></label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                            <label class="form-check-label" for="inlineRadio2"></label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                            <label class="form-check-label" for="inlineRadio3"></label>
-                          </div>
-                    </div>
+
+                <div class="slide">
+                    <div class="photo photo3"></div>
+                    <div class="text"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quasi quis rem vel ipsum eligendi voluptatum asperiores doloremque nihil veritatis!</p></div>
+                    <div class="name"><p><strong>Анатолий</strong>, Арбитражный судья</p></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts section" id="contactS">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-4 offset-xxl-4">
@@ -347,4 +355,7 @@
     </footer>
 </body>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="../src/slick/slick.min.js"></script>
+<script src="js/myScript.js"></script>
 </html>
